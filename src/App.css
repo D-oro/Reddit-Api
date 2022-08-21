@@ -45,7 +45,11 @@ h2{
   text-align: center;
 }
 
-/* Popup style */
+h3{
+  text-align: left;
+  margin: 0px 0px 0px 20px
+}
+
 .popup-box {
   position: fixed;
   background: #00000050;
@@ -57,7 +61,7 @@ h2{
 
 .box {
   position: relative;
-  width: 70%;
+  width: 30%;
   margin: 0 auto;
   height: auto;
   max-height: 70vh;

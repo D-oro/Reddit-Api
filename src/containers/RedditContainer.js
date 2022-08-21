@@ -1,6 +1,5 @@
 import React, {useState, useEffect} from 'react'
 import AllReplies from '../components/AllReplies';
-import Popup from '../components/Popup';
 
 const RedditContainer = () => {
     const[replies, setReplies] = useState([]);
@@ -15,12 +14,6 @@ const RedditContainer = () => {
         .then(replies => setReplies(replies.data.children))
     }
 
-    const[isOpen, setIsOpen] = useState(false);
-
-    const togglePopup = () => {
-        setIsOpen(!isOpen);
-    }
-
     return(
         <div>
             <p>
@@ -29,7 +22,6 @@ const RedditContainer = () => {
         </div>
     )
 }
-
-
-
 export default RedditContainer
+
+
